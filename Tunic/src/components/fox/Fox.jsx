@@ -73,6 +73,7 @@ function Model({ modelPath }) {
 
   useFrame(() => {
     if (objRef.current) {
+      objRef.current.rotation.x = 0.61;
       objRef.current.rotation.y += 0.01; // Adjust the rotation speed here
       camera.lookAt(objRef.current.position);
     }
@@ -90,7 +91,6 @@ export default function Fox() {
     <div className="Frame">
       <Canvas camera={{ position: [0, 0, 4] }}>
         <ambientLight intensity={0.5} />
-        <directionalLight intensity={0.9} position={[10, 10, 10]} />
         <Model modelPath={modelPath} />
       </Canvas>
     </div>
