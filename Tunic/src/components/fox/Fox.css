@@ -1,0 +1,15 @@
+#root {
+    --bg-color: #151B24;
+  }
+  
+  body{
+    background-color: var(--bg-color);
+  }
+  
+  .Frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
