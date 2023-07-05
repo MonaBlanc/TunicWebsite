@@ -1,5 +1,6 @@
 import Fox from "../../components/fox/Fox";
 import "./Home.css";
+import "/src/assets/font/Trunic.otf";
 export default function Home() {
   return (
     <div className="Home">
@@ -17,7 +18,7 @@ export default function Home() {
           <Fox />
         </div>
         <div className="col">
-          <p>hello</p>
+          <p className="trunic">hello</p>
         </div>
       </div>
     </div>

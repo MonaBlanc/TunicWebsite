@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "Medium";   
+  font-family: "Trunic";   
   src: local("Trunic"),
-    url("./font/Trunic.otf") format("woff");
+    url("./font/Trunic.otf") format("otf");
 }
 
 #root {

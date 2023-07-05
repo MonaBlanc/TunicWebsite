@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Trunic';
+    src: local("Trunic"),
+        url('/src/assets/font/Trunic.otf') format('opentype');
+}
+
 .Home {
     display: flex;
     flex-direction: column;
@@ -63,4 +69,10 @@
     min-height: 80vh;
     display: flex;
 
+}
+
+.trunic {
+    font-family: "Trunic";
+    src: local("Trunic"),
+        url("/src/assets/font/Trunic.otf") format("otf");
 }
