@@ -29,6 +29,85 @@
     align-items: center;
 }
 
+.container h2{
+    margin-top: 45%;
+    color: #F5F5F5;
+    font-family: Judson;
+    text-transform: uppercase;
+    font-size: 4em;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.container h3{
+    color: #F5F5F5;
+    font-family: Judson;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.intro{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    padding-left: 80px;
+}
+
+.rounded-corners {
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 20px;
+    border: 3px solid white;
+    font-size: 30px;
+  }
+  
+  td {
+    width: 300px;
+    height: 70px;
+    text-align: center;
+    border-bottom: 2px solid white;
+  }
+  
+  .rounded-corners tr:last-child td {
+    border-bottom: none; /* Removes the border bottom from the last row */
+  }
+  
+  .rounded-corners th:not(:last-child),
+  .rounded-corners td:not(:last-child) {
+    border-right: 2px solid white;
+  }
+  
+.Awards{
+    padding-top: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+}
+
+.description {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.container p{
+    color: #F5F5F5;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
 .Logo {
     height: 150px;
     width: 300px;
