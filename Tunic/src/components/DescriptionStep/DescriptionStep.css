@@ -1,0 +1,55 @@
+.information {
+    margin: 16px 16px 0 0;
+    z-index: 1;
+}
+
+.contour {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.90);
+    padding: 8px 16px;
+    margin: 0 -64px 16px 0;
+}
+
+.name {
+    color: #151B24;
+    font-family: Judson;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.description {
+    color: #FFF;
+    text-align: right;
+    font-family: Judson;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 32px;
+    margin: 16px 0 0 16px;
+    order: 2;
+}
+
+
+.grid-item:nth-child(2n + 2) .contour {
+    flex-direction: row-reverse;
+    margin: 0 0 16px -64px;
+}
+
+.img-container .project {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    aspect-ratio: 4/3;
+    flex-shrink: 0;
+    width: calc(50% + 32px);
+}

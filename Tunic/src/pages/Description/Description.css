@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Trunic';
+    src: local("Trunic"),
+        url('/src/assets/font/Trunic.otf') format('opentype');
+}
+
+.trunic {
+    font-family: "Trunic";
+    src: local("Trunic"),
+        url("/src/assets/font/Trunic.otf") format("otf");
+}
+
+  
+  /* Quinconce */
+  
+  .slider
+  {
+    margin: 0 8vw;
+  }
+  
+  .SectionDescription {
+    padding-top: 200px;
+
+  }

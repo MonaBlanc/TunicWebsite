@@ -89,7 +89,7 @@ export default function Fox() {
 
   return (
     <div className="Frame">
-      <Canvas camera={{ position: [0, 0, 4] }}>
+      <Canvas camera={{ position: [0, 0, 2.5] }}>
         <ambientLight intensity={0.5} />
         <Model modelPath={modelPath} />
       </Canvas>

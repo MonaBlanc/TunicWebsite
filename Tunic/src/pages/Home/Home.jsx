@@ -36,7 +36,7 @@ export default function Home() {
             <img src="src/assets/img/gameAwards.png" alt="gameAwards" style={{width:"400px", height:"auto", paddingTop:"30px"}}></img>
           </div>
         </div>
-        <div className="col">
+        <div className="col fox">
           <Fox />
         </div>
         <div className="col description">
