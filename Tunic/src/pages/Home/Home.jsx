@@ -32,8 +32,8 @@ export default function Home() {
           </table>
           </div>
           <div className="Awards">
-            <img src="src/assets/img/diceAward.png" alt="diceAward" style={{width:"200px", height:"auto"}}></img>
-            <img src="src/assets/img/gameAwards.png" alt="gameAwards" style={{width:"400px", height:"auto", paddingTop:"30px"}}></img>
+            <img src="src/assets/img/diceAward.png" alt="diceAward" style={{width:"100px", height:"auto"}}></img>
+            <img src="src/assets/img/gameAwards.png" alt="gameAwards" style={{width:"200px", height:"auto", paddingTop:"30px"}}></img>
           </div>
         </div>
         <div className="col fox">
