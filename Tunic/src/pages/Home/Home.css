@@ -20,12 +20,10 @@
 }
 
 .container {
-    position: relative;
-    width: 100%;
-    height: 100%;
+    width: 95%; 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -48,29 +46,35 @@
     font-weight: 400;
 }
 
-.intro{
+.intro {
     position: relative;
     width: 25%;
+    display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding-left: 80px;
+    justify-content: flex-start; /* Align items to the start */
+    padding-left: 20px; /* Reduce padding */
 }
 
 .rounded-corners {
     border-spacing: 0;
     border-collapse: separate;
     border-radius: 20px;
-    border: 3px solid white;
+    border: 2px solid white;
     font-size: 30px;
-  }
+}
   
-  td {
+td {
     width: 300px;
-    height: 70px;
+    height: 50px;
     text-align: center;
     border-bottom: 2px solid white;
-  }
-  
+    font-size: medium;
+    }
+
+    td:hover {
+        transition: background-color 0.5s ease; /* Add transition for smooth hover */
+        background-color: rgba(255, 255, 255, 0.2); /* Lighten the background on hover */
+    }
   .rounded-corners tr:last-child td {
     border-bottom: none; /* Removes the border bottom from the last row */
   }
@@ -79,36 +83,30 @@
   .rounded-corners td:not(:last-child) {
     border-right: 2px solid white;
   }
-  
-.Awards{
-    padding-top: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: left;
-}
 
 .Home .description {
     position: relative;
     width: 25%;
-    height: 100%;
+    height: auto; /* Adjust height to auto */
     display: flex;
     flex-direction: column;
-    align-items: right;
+    align-items: flex-start; /* Align items to the start */
+    padding-right: 20px; /* Reduce padding */
 }
 
-.container p{
+.container p {
     color: #F5F5F5;
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 1.4; /* Adjust line height */
+    margin: 10px 0; /* Add margin between paragraphs */
 }
 
 .Logo {
     height: 150px;
     width: 300px;
-    padding-top: 50px;
+    padding-top: 5%;
     background-image: url("/src/assets/img/tunicLogo.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -138,6 +136,15 @@
 
 }
 
+.Awards{
+    position: absolute;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    bottom: 10%;
+}
+
 .col {
     position: relative;
     height: 100%;
@@ -145,8 +152,11 @@
     display: flex;
 }
 
-.fox{
-    width: 40%;
+.fox {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .trunic {

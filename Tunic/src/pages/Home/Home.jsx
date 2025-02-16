@@ -16,24 +16,9 @@ export default function Home() {
       </div>
       <div className="container">
         <div className="col intro">
-          <div className="tableau">
-          <h3>Game</h3>
-          <table className="rounded-corners">
-            <tbody>
-            <tr>
-              <td>Tunic</td>
-              <td className="trunic">Secret Legend</td>
-            </tr>
-            <tr>
-              <td className="trunic">Genre</td>
-              <td>Action-Adventure</td>
-            </tr>
-            </tbody>
-          </table>
-          </div>
           <div className="Awards">
             <img src="src/assets/img/diceAward.png" alt="diceAward" style={{width:"100px", height:"auto"}}></img>
-            <img src="src/assets/img/gameAwards.png" alt="gameAwards" style={{width:"200px", height:"auto", paddingTop:"30px"}}></img>
+            <img src="src/assets/img/gameAwards.png" alt="gameAwards" style={{width:"200px", height:"70px", paddingLeft:"30px"}}></img>
           </div>
         </div>
         <div className="col fox">

@@ -1,4 +1,3 @@
-import React from "react";
 import { Slide } from "react-awesome-reveal";
 import DescriptionStep from "../../components/DescriptionStep/DescriptionStep";
 import "./Description.css";

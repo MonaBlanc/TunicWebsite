@@ -1,6 +1,7 @@
 import { OrbitControls } from "@react-three/drei";
+import PropTypes from 'prop-types';
 import { Canvas, extend, useFrame, useThree } from "@react-three/fiber";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AdditiveBlending, Box3, Color, DoubleSide, ShaderMaterial, Vector3 } from "three";
 import { MTLLoader } from "three/examples/jsm/loaders/MTLLoader";
 import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader";
@@ -11,7 +12,7 @@ extend({ OBJLoader });
 function Model({ modelPath }) {
   const objRef = useRef();
   const [loaded, setLoaded] = useState(false);
-  const { scene, camera, gl } = useThree();
+  const { scene, camera } = useThree();
 
   useEffect(() => {
     var mtlLoader = new MTLLoader();
@@ -22,7 +23,6 @@ function Model({ modelPath }) {
       objLoader.load(modelPath, (obj) => {
         objRef.current = obj;
         const box = new Box3().setFromObject(obj);
-        const size = box.getSize(new Vector3());
         const center = box.getCenter(new Vector3());
         obj.position.x += obj.position.x - center.x;
         obj.position.y += obj.position.y - center.y;
@@ -31,7 +31,7 @@ function Model({ modelPath }) {
         // Apply X-ray material to the loaded model
         const xrayMaterial = new ShaderMaterial({
           uniforms: {
-            p: { value: 3 },
+            p: { value: 1 },
             glowColor: { value: new Color(0x84ccff) },
           },
           vertexShader: `
@@ -84,13 +84,17 @@ function Model({ modelPath }) {
   ) : null;
 }
 
+Model.propTypes = {
+  modelPath: PropTypes.string.isRequired,
+};
+
 export default function Fox() {
   const modelPath = "/src/assets/3DModel/Tunic_Model.obj";
 
   return (
     <div className="Frame">
       <Canvas camera={{ position: [0, 0, 2.5] }}>
-        <ambientLight intensity={0.5} />
+        <ambientLight color={0x404040} />
         <Model modelPath={modelPath} />
       </Canvas>
     </div>
